@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "构造函数Constructor.md",
+                "file": "Events and delegates.md",
                 "mode": "source",
                 "source": false
               }
@@ -148,7 +148,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "构造函数Constructor.md",
+                "file": "Events and delegates.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -165,7 +165,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "构造函数Constructor.md",
+                "file": "Events and delegates.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -188,7 +188,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "构造函数Constructor.md"
+                "file": "Events and delegates.md"
               }
             }
           }
@@ -211,10 +211,10 @@
   },
   "active": "d4664017e7da3b7f",
   "lastOpenFiles": [
-    "方法类型.md",
-    "构造函数Constructor.md",
-    "关键字.md",
     "传递.md",
-    "Events and delegates.md"
+    "Events and delegates.md",
+    "方法类型.md",
+    "关键字.md",
+    "构造函数Constructor.md"
   ]
 }
