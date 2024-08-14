@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "特殊语法.md",
+                "file": "关键字.md",
                 "mode": "source",
                 "source": false
               }
@@ -172,7 +172,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "特殊语法.md",
+                "file": "关键字.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -189,7 +189,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "特殊语法.md",
+                "file": "关键字.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -212,7 +212,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "特殊语法.md"
+                "file": "关键字.md"
               }
             }
           }
@@ -235,8 +235,8 @@
   },
   "active": "02db0423f4dee040",
   "lastOpenFiles": [
-    "Events and delegates.md",
     "特殊语法.md",
+    "Events and delegates.md",
     "传递.md",
     "动画.md",
     "关键字.md",
