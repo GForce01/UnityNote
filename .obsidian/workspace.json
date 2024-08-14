@@ -56,6 +56,18 @@
             }
           },
           {
+            "id": "2cc01f7d5cb5144c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "方法类型.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
             "id": "cc149fc3689b106f",
             "type": "leaf",
             "state": {
@@ -92,7 +104,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       },
       {
         "id": "1753acd1a8d7c3d9",
@@ -172,7 +184,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "事件Events.md",
+                "file": "方法类型.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -189,7 +201,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "事件Events.md",
+                "file": "方法类型.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -212,7 +224,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "事件Events.md"
+                "file": "方法类型.md"
               }
             }
           }
@@ -233,15 +245,16 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "02db0423f4dee040",
+  "active": "2cc01f7d5cb5144c",
   "lastOpenFiles": [
-    "方法类型.md",
-    "特殊语法.md",
     "构造函数Constructor.md",
+    "方法类型.md",
     "动画.md",
     "关键字.md",
-    "事件Events.md",
     "传递.md",
+    "事件Events.md",
+    "特殊语法（语法糖）.md",
+    "泛型.md",
     "未命名"
   ]
 }

@@ -9,7 +9,7 @@ EventHandler
 事件怎么用
 
 传递参数
-event触发后需要传递一个
+event触发后需要传递一个EventArgs类参数，如果不需要参数的话可以
 
 
 UnityEvent
