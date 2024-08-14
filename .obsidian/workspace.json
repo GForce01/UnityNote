@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "事件与委托Events and delegates.md",
+                "file": "事件Events.md",
                 "mode": "source",
                 "source": false
               }
@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "事件与委托Events and delegates.md",
+                "file": "事件Events.md",
                 "mode": "source",
                 "source": false
               }
@@ -49,7 +49,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "事件与委托Events and delegates.md",
+                "file": "事件Events.md",
                 "mode": "source",
                 "source": false
               }
@@ -73,7 +73,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "事件与委托Events and delegates.md",
+                "file": "事件Events.md",
                 "mode": "source",
                 "source": false
               }
@@ -172,7 +172,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "事件与委托Events and delegates.md",
+                "file": "事件Events.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -189,7 +189,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "事件与委托Events and delegates.md",
+                "file": "事件Events.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -212,7 +212,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "事件与委托Events and delegates.md"
+                "file": "事件Events.md"
               }
             }
           }
@@ -236,7 +236,7 @@
   "active": "02db0423f4dee040",
   "lastOpenFiles": [
     "传递.md",
-    "事件与委托Events and delegates.md",
+    "事件Events.md",
     "关键字.md",
     "特殊语法.md",
     "动画.md",
