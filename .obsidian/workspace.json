@@ -37,7 +37,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "动画.md",
+                "file": "Events and delegates.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "02db0423f4dee040",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "特殊语法.md",
                 "mode": "source",
                 "source": false
               }
@@ -80,7 +92,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       },
       {
         "id": "1753acd1a8d7c3d9",
@@ -160,7 +172,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "动画.md",
+                "file": "特殊语法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -177,7 +189,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "动画.md",
+                "file": "特殊语法.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -200,7 +212,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "动画.md"
+                "file": "特殊语法.md"
               }
             }
           }
@@ -221,13 +233,14 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "07dd9d607fd51a12",
+  "active": "02db0423f4dee040",
   "lastOpenFiles": [
-    "关键字.md",
-    "动画.md",
     "Events and delegates.md",
-    "未命名",
+    "特殊语法.md",
     "传递.md",
+    "动画.md",
+    "关键字.md",
+    "未命名",
     "方法类型.md",
     "构造函数Constructor.md"
   ]
