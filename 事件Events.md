@@ -29,6 +29,7 @@ event触发后需要传递一个EventArgs类参数，如果不需要参数的话
         public string Message { get; set; }
         public FailureType Type { get; set; }
     }
+相应的，在调用的时候
 
 
 UnityEvent
