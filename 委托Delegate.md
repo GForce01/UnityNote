@@ -11,7 +11,10 @@
 	AssemblyLine secondAssemblyLine;
 *注意这里实例化的方法和给变量赋值的语法相同，只需要传入制定的方法名称且**不带括号***。
 
-现在流水线建立好了，却没有具体的工作任务。委托与直接声明方法最大的不同是它**灵活可变**，直接声明的方法是一条买来的预制机器，一台机器只能干固定一件事，但是流水线可以随时重新组装以**适应不同任务**。因此想要调动流水线，要先给每条流水线**指派具体任务**，视指派方法可分为单bo fang：
-	firstAssemblyLine  += Addition;
-	secondAssemblyLine += Division;
-*这里Addition和Division都是自定义的方法，*
+现在流水线建立好了，却没有具体的工作任务。委托与直接声明方法最大的不同是它**灵活可变**，直接声明的方法是一条买来的预制机器，一台机器只能干固定一件事，但是流水线可以随时重新组装以**适应不同任务**。因此想要调动流水线，要先给每条流水线**指派具体任务**，视指派方法可分为单播（singlecast）和多播(multicast)：
+	firstAssemblyLine  = Addition;
+	secondAssemblyLine += FirstDivision;
+	secondAssemblyLine += SecondDivision;
+*这里Addition，FirstDivision以及SecondDivision都是自定义的方法，在传入的时候同样**不带括号***。
+
+现在万事俱备，下命令吧，厂长！
