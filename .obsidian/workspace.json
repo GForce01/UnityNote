@@ -247,14 +247,15 @@
   },
   "active": "2cc01f7d5cb5144c",
   "lastOpenFiles": [
-    "方法类型.md",
     "构造函数Constructor.md",
-    "动画.md",
-    "关键字.md",
-    "传递.md",
-    "事件Events.md",
-    "特殊语法（语法糖）.md",
     "泛型.md",
+    "事件Events.md",
+    "?..md",
+    "传递.md",
+    "关键字.md",
+    "动画.md",
+    "特殊语法（语法糖）.md",
+    "方法类型.md",
     "未命名"
   ]
 }

@@ -4,13 +4,16 @@
 
 Delegate与Event的关系
 
-事件怎么用
-首先定义事件
+### 事件怎么用
+##### 首先定义事件
 	event EventHandler OnMyEvent;
-事件需要订阅者，因此需要添加订阅
+
+##### 事件需要订阅者，因此需要添加订阅
 	objectWithEvent.OnMyEvent += SomeFunction;
-触发事件
+
+##### 触发事件
 	OnMyEvent?.Invoke(this, EventArgs.Empty);
+这里需要两个参数Object sender（发出者） 和 EventArgs，[?.]()运算符用来检测事件是否成立（存在订阅者，!=null）
 
 EventHandler
 
