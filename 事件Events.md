@@ -28,8 +28,11 @@ event触发后需要传递一个EventArgs类参数，如果不需要参数的话
 相应的，在调用的时候
 	int count = 2;
 	OnMyEvent?.Invoke(this, new MyEventArgs{num = count});
-**注意这里需要使用new新建实例**
+**注意这里需要使用new新建实例**。
 
+还有就是，在定义事件的时候可以进行约束，限定只能使用某一特定EventArgs。
+	public event EventHandler<MyEventArgs> M y Ev e;
+	
 ### Delegate与Action
 
 
