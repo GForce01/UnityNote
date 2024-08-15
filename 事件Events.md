@@ -23,13 +23,14 @@ Delegate与Event的关系
 ### 传递参数
 event触发后需要传递一个EventArgs类参数，如果不需要参数的话可以使用EventArgs.Empty。
 但是如果需要自定义传递的参数的话则需要新建一个继承EventArgs的类，如：
-	public class FailureEventArgs : EventArgs
+	public class MyEventArgs : EventArgs
     {
-        public string Url { get; set; }
-        public string Message { get; set; }
-        public FailureType Type { get; set; }
+        public int num;
     }
 相应的，在调用的时候
+	int count = 2;
+	OnMyEvent?.Invoke(this, new MyEventArgs{num = count});
+**注意这里需要使用new新建实例**
 
 
 UnityEvent
