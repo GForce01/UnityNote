@@ -61,7 +61,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "方法类型.md",
+                "file": "事件Events.md",
                 "mode": "source",
                 "source": false
               }
@@ -184,7 +184,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "方法类型.md",
+                "file": "事件Events.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -201,7 +201,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "方法类型.md",
+                "file": "事件Events.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -224,7 +224,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "方法类型.md"
+                "file": "事件Events.md"
               }
             }
           }
@@ -247,8 +247,8 @@
   },
   "active": "2cc01f7d5cb5144c",
   "lastOpenFiles": [
-    "构造函数Constructor.md",
     "方法类型.md",
+    "构造函数Constructor.md",
     "动画.md",
     "关键字.md",
     "传递.md",
