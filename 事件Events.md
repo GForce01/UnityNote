@@ -13,12 +13,22 @@ Delegate与Event的关系
 
 ##### 触发事件
 	OnMyEvent?.Invoke(this, EventArgs.Empty);
-这里需要两个参数Object sender（发出者） 和 EventArgs，[?.]()运算符用来检测事件是否成立（存在订阅者，!=null）
+这里需要两个参数Object sender（发出者） 和 EventArgs，[?.](特殊语法（语法糖）#?. **空条件操作符（null-conditional operator）**)运算符用来检测事件是否成立（存在订阅者，!=null）以防止发生错误。
 
-EventHandler
+##### 退订事件
+	objectWithEvent.OnMyEvent -= SomeFunction;
 
-传递参数
-event触发后需要传递一个EventArgs类参数，如果不需要参数的话可以
+### EventHandler
+
+### 传递参数
+event触发后需要传递一个EventArgs类参数，如果不需要参数的话可以使用EventArgs.Empty。
+但是如果需要自定义传递的参数的话则需要新建一个继承EventArgs的类，如：
+	public class FailureEventArgs : EventArgs
+    {
+        public string Url { get; set; }
+        public string Message { get; set; }
+        public FailureType Type { get; set; }
+    }
 
 
 UnityEvent
