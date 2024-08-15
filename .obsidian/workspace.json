@@ -25,14 +25,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "关键字.md",
+                "file": "事件Events.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9399e3ca0f3dbd22",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "委托Delegate.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "关键字.md",
+                "file": "委托Delegate.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "关键字.md",
+                "file": "委托Delegate.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "关键字.md"
+                "file": "委托Delegate.md"
               }
             }
           }
@@ -158,17 +170,18 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "2a3b557d23e9c921",
+  "active": "9399e3ca0f3dbd22",
   "lastOpenFiles": [
+    "事件Events.md",
+    "Unity各方法执行顺序.md",
+    "委托Delegate.md",
+    "特殊语法（语法糖）.md",
+    "传递.md",
+    "关键字.md",
     "动画.md",
     "方法类型.md",
     "构造函数Constructor.md",
     "泛型.md",
-    "特殊语法（语法糖）.md",
-    "Unity各方法执行顺序.md",
-    "事件Events.md",
-    "传递.md",
-    "关键字.md",
     "?..md",
     "未命名"
   ]
