@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "特殊语法（语法糖）.md",
+                "file": "事件Events.md",
                 "mode": "source",
                 "source": false
               }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "特殊语法（语法糖）.md",
+                "file": "事件Events.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "特殊语法（语法糖）.md",
+                "file": "事件Events.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "特殊语法（语法糖）.md"
+                "file": "事件Events.md"
               }
             }
           }
@@ -148,15 +148,15 @@
   },
   "active": "02db0423f4dee040",
   "lastOpenFiles": [
-    "事件Events.md",
-    "构造函数Constructor.md",
-    "特殊语法（语法糖）.md",
-    "关键字.md",
     "传递.md",
-    "泛型.md",
-    "方法类型.md",
-    "?..md",
+    "关键字.md",
     "动画.md",
+    "方法类型.md",
+    "构造函数Constructor.md",
+    "泛型.md",
+    "特殊语法（语法糖）.md",
+    "事件Events.md",
+    "?..md",
     "未命名"
   ]
 }
