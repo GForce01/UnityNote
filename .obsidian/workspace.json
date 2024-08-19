@@ -158,7 +158,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -172,6 +172,7 @@
   },
   "active": "9399e3ca0f3dbd22",
   "lastOpenFiles": [
+    "关键字.md",
     "委托Delegate.md",
     "事件Events.md",
     "Unity各方法执行顺序.md",
@@ -179,7 +180,6 @@
     "构造函数Constructor.md",
     "泛型.md",
     "特殊语法（语法糖）.md",
-    "关键字.md",
     "传递.md",
     "动画.md",
     "?..md",
