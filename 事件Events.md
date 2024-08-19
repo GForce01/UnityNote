@@ -22,6 +22,7 @@
 	objectWithEvent.OnMyEvent -= SomeFunction;
 
 ### EventHandler
+EventHandler<TEventArgs\> 是一个预定义的委托，专门用来处理事件。它的定义如下：
 
 ### 传递参数
 event触发后需要传递一个EventArgs类参数，如果不需要参数的话可以使用EventArgs.Empty。
