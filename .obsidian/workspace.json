@@ -54,9 +54,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "a506f0c312dacb07",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "属性和字段.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -122,7 +134,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "方法重载.md",
+                "file": "属性和字段.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -139,7 +151,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "方法重载.md",
+                "file": "属性和字段.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -162,7 +174,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "方法重载.md"
+                "file": "属性和字段.md"
               }
             }
           }
@@ -182,20 +194,21 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "73d90224600f9660",
+  "active": "a506f0c312dacb07",
   "lastOpenFiles": [
-    "事件Events.md",
-    "方法重载.md",
-    "传递.md",
-    "动画.md",
-    "关键字.md",
     "委托Delegate.md",
-    "event.md",
-    "Unity各方法执行顺序.md",
+    "属性和字段.md",
     "方法类型.md",
+    "方法重载.md",
     "构造函数Constructor.md",
     "泛型.md",
+    "关键字(修饰符).md",
     "特殊语法（语法糖）.md",
+    "事件Events.md",
+    "传递.md",
+    "动画.md",
+    "event.md",
+    "Unity各方法执行顺序.md",
     "?..md",
     "未命名"
   ]
