@@ -172,16 +172,17 @@
   },
   "active": "9399e3ca0f3dbd22",
   "lastOpenFiles": [
+    "传递.md",
+    "动画.md",
     "关键字.md",
     "委托Delegate.md",
     "事件Events.md",
+    "event.md",
     "Unity各方法执行顺序.md",
     "方法类型.md",
     "构造函数Constructor.md",
     "泛型.md",
     "特殊语法（语法糖）.md",
-    "传递.md",
-    "动画.md",
     "?..md",
     "未命名"
   ]

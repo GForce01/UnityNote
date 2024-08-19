@@ -30,6 +30,6 @@
 最后，当收工的时候记得把已经拆除的流水线除名
 	firstAssemblyLine  -= Addition;
 	secondAssemblyLine -= Division;
-	secondAssemblyLine -= Multiplication;
+	secondAssemblyLine += Multiplication;
 
 委托有很多的作用，最常见的就是[事件](事件Events)、回调以及将函数作为参数传递。上文的例子中展示的是一个事件用法的例子，在[[事件Events]]中使用的event是一种特殊的委托，
