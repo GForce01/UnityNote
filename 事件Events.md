@@ -23,6 +23,7 @@
 
 ### EventHandler
 EventHandler<TEventArgs\> 是一个预定义的委托，专门用来处理事件。它的定义如下：
+	public delegate void EventHandler<TEventArgs\>(object sender, TEventArgs e);
 
 ### 传递参数
 event触发后需要传递一个EventArgs类参数，如果不需要参数的话可以使用EventArgs.Empty。
@@ -33,7 +34,7 @@ event触发后需要传递一个EventArgs类参数，如果不需要参数的话
     }
 相应的，在调用的时候
 	int count = 2;
-	OnMyEvent?.Invoke(this, new MyEventArgs{num = count});
+	OnMyEvent?.Invoke(this, ***new*** MyEventArgs{num = count});
 **注意这里需要使用new新建实例**。
 
 还有就是，在定义事件的时候可以进行约束，限定只能使用某一特定EventArgs。
