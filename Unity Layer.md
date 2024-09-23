@@ -20,5 +20,10 @@ if((objectLayerMask & mask.value) == 0) return;
 ```
 
 另外，如果想要在现有的Layer Mask中加入一个新的层则需要用到按位或|操作：
-
-对应的，如果需要移除一层则需要按位
+```cs
+originalLayerMask |= (1 << layerToAdd);
+```
+对应的，如果需要移除一层则需要先对要去除的层进行按位取反~后再将其与原Layer Mask进行按位与操作：
+```cs
+originalLayerMask &= ~(1 << layerToRemove);
+```
