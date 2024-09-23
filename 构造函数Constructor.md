@@ -6,7 +6,7 @@
 
 例子：
 ```cs
-public class Example
+public class Calculator
 {
     private int _value;
 
@@ -15,9 +15,9 @@ public class Example
         _value = initialValue;
     }
 
-    public int ShowValue
+    public int ShowValue(int newValue)
     {
-        return _value;
+        return _value += newValue;
     }
 }
 
