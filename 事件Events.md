@@ -41,7 +41,7 @@ event触发后需要传递一个EventArgs类参数，如果不需要参数的话
 	public event EventHandler<MyEventArgs\> MyEvent;
 
 ### Delegate与Action
-//Action is same as 'public deligate void', events can only be invoked inside the class and external methods can only subscribe to it
+//Action is same as 'public delegate void', events can only be invoked inside the class and external methods can only subscribe to it
 
 ### UnityEvent
 UnityEvent是Unity对C#Event的改进，主要好处是可以序列化，也就是可以在编辑器中看到，方便操作。当然还有些[其他好处](https://mycroftcooper.github.io/2021/03/21/Unity%E4%B8%AD%E7%9A%84%E4%BA%8B%E4%BB%B6/#3-3-UnityEvent%E7%9A%84%E4%BD%BF%E7%94%A8)。
