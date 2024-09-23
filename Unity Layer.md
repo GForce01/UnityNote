@@ -9,11 +9,16 @@ var objectLayerMask = 1 << 9;
 //9为层数
 //结果为0b10_0000_0000
 ```
-之后可以直接穿入货将objectLayerMask与现有的Layer Mask进行对比，同样，这里的对比因为需要一位一位对比，因此需要用到&-按位与（AND）操作：
+之后可以直接穿入货将objectLayerMask与现有的Layer Mask进行对比，同样，这里的对比因为需要一位一位对比，因此需要用到按位与&操作：
 ```cs
 //假设先前定义了一个LayerMask变量
 public LayerMask mask;
 
 //则现在可以进行如下操作
 if((objectLayerMask & mask.value) == 0) return;
+//这里会依次对比每一位数值，仅同为1时结果为1，反之为0，因此如果mask中没有任何一层与目标layer一致的话结果就会是0
 ```
+
+另外，如果想要在现有的Layer Mask中加入一个新的层则需要用到按位或|操作：
+
+对应的，如果需要移除一层则需要按位
