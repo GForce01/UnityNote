@@ -9,3 +9,11 @@ var objectLayerMask = 1 << 9;
 //9为层数
 //结果为0b10_0000_0000
 ```
+之后可以直接穿入货将objectLayerMask与现有的Layer Mask进行对比，同样，这里的对比因为需要一位一位对比，因此需要用到&-按位与（AND）操作：
+```cs
+//假设先前定义了一个LayerMask变量
+public LayerMask mask;
+
+//则现在可以进行如下操作
+if((objectLayerMask & mask.value) == 0) return;
+```
