@@ -1,4 +1,7 @@
-Input System结构与概念
+## Input System结构与概念
+### Input System简介
+
+### Input System中的概念
 ![[ConceptsOverview.svg]]
 1. 用户
 2. 设备-指物理意义上的输入设备
