@@ -37,7 +37,7 @@ void Update()
     }
 ```
 ### 使用嵌入动作
-
+跳过Input Action Asset直接在脚本中声明公开的***InputAction***变量，如此一来可以相对简便地享受到Input System的动作绑定的便利性，但是这样无法进行动作分组等操作。具体用法上来说，需要先声明Action变量并在Inspector中完成设置，在da[激活](#激活与停止)
 ###
 ###
 
@@ -50,3 +50,5 @@ void Update()
 ```cs
 using UnityEngine.InputSystem;
 ```
+
+### 激活与停止
