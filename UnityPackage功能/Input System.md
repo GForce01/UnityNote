@@ -121,6 +121,7 @@ public void Update()
     Vector2 moveAmount = moveAction.ReadValue<Vector2>();
 }
 ```
+如果需要判断是否
 #### 订阅Handler
 一般对于按钮之类的一次性操作可以直接订阅。
 每个动作流程会产生的事件有三种：
