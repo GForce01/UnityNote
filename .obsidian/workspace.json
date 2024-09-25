@@ -30,21 +30,9 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "e00f74455f9a5a14",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "UnityPackage功能/Input System.md",
-                "mode": "source",
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -170,11 +158,13 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "e00f74455f9a5a14",
+  "active": "4f9ada3504c27254",
   "lastOpenFiles": [
+    "代码/事件Events.md",
+    "UnityPackage功能/Input System.md",
+    "Player Input.md",
     "ScriptableObject.md",
     "Cinemachine.md",
-    "UnityPackage功能/Input System.md",
     "未命名",
     "代码/协程.md",
     "Resources/ConceptsOverview.svg",
@@ -186,7 +176,6 @@
     "代码/System.Linq.md",
     "Input",
     "Input.md",
-    "代码/事件Events.md",
     "代码/传递.md",
     "代码/关键字(修饰符).md",
     "Unity功能/动画.md",
