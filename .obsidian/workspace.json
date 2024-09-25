@@ -31,7 +31,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "动画.md",
+                "file": "方法类型.md",
                 "mode": "source",
                 "source": false
               }
@@ -103,7 +103,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "动画.md",
+                "file": "方法类型.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +120,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "动画.md",
+                "file": "方法类型.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +143,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "动画.md"
+                "file": "方法类型.md"
               }
             }
           }
@@ -166,6 +166,7 @@
   },
   "active": "9fe43281895344a6",
   "lastOpenFiles": [
+    "动画.md",
     "Unity各方法执行顺序.md",
     "委托Delegate.md",
     "事件Events.md",
@@ -175,7 +176,6 @@
     "方法重载.md",
     "方法类型.md",
     "属性和字段.md",
-    "动画.md",
     "关键字(修饰符).md",
     "Welcome.md",
     "传递.md"
