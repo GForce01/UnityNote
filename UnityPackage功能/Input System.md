@@ -12,6 +12,7 @@ Input System主要面向需要在多种不同控制方案间切换的需求，�
 7. 动作资产Action Asset-一种特殊的资产类型，自带UI，内部储存了控制方案，映射表，以及动作组等信息。
 8. 嵌入动作Embedded Actions-指直接在MonoBehaviours脚本中定义而非通过动作资产定义的动作。会失去创建动作组，映射表以及控制方案的便利特性。
 9. 绑定-动作和控制之间的关联。
+10. Action Maps-一组动作，比如游戏的主界面和游戏界面需要两套不同的操作时就可以各自设置一个Action Map
 
 ## Input System的几种工作架构
 Input System一共有四种工作流程架构，各自拥有不同的灵活性和抽象性。
@@ -45,8 +46,11 @@ public InputAction myAction;
 ```
 具体用法上来说，需要先声明Action变量并在Inspector中完成设置，在代码中需要先[激活](#激活与停止)动作，若要读取输入数值则要么循环拉取信息要么为事件订阅Handler。
 ### 使用Actions Asset
-在编辑器中右键新建一个Actions Asset并在其UI中设置。比起使用和代码刚性绑定的嵌入动作，使用Actions Asset设置的控制方案可以在全军内的多个脚本中通用。而且这样还允许使用Action Maps和
+在编辑器中右键新建一个Actions Asset并在其UI中设置。比起使用和代码刚性绑定的嵌入动作，使用Actions Asset设置的控制方案可以在全军内的多个脚本中通用。而且这样还允许使用Action Maps和Control Schemes功能。
+在直接使用Actions Asset时，也有两种方法：
+
 ### 使用Player Input Asset
+
 
 ## 动作种类
 一共有三种动作种类：
