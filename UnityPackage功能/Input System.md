@@ -79,7 +79,8 @@ void Awake(){
 //Actions类.Action Maps名称.Action名称
 Vector2 moveVector = actions.gameplay.move.ReadValue<Vector2>();
 ```
-### 使用Player Input Asset
+### 使用[[Input System#Player Input]]组件
+最后一种方法是使用Player Input组件，一般来说组件应该与处理动作逻辑的脚本放在同一个物体下。使用组件可以减少很多代码量，但是相应的需要更多编辑器内操作同时在debug的时候会有些困难，需要自己取舍。
 
 ## 动作种类
 一共有三种动作种类：
@@ -88,12 +89,15 @@ Vector2 moveVector = actions.gameplay.move.ReadValue<Vector2>();
 3. Passthrough
 ## 数据种类
 
+## 组件
+### Player Input
+
+
 ## Input System Scripting & API
 在一切使用Input System逻辑的代码中请务必记得在开头添加引用
 ```cs
 using UnityEngine.InputSystem;
 ```
-
 ### 激活与禁用
 在使用特定动作之前需要先将其激活（Enable），可以单独激活某个动作也可以一次激活整个Action Map：
 ```cs
@@ -106,7 +110,7 @@ gameplayActions.Enable();
 lookAction.Disable();
 gameplayActions.Disable();
 ```
-禁用十分重要，尤其是当
+禁用十分重要，尤其是在与动作相关连的逻辑可能被禁用的时候，否则可能会引起报错
 ### 读取Action数值
 读取Action数值一般有两种方法，一种是直接循环拉取数值，另一种是为事件添加[订阅](事件Events#事件需要订阅者，因此需要添加订阅)。
 #### 循环拉取
