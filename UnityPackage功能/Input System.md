@@ -48,8 +48,24 @@ public InputAction myAction;
 ### 使用Actions Asset
 在编辑器中右键新建一个Actions Asset并在其UI中设置。比起使用和代码刚性绑定的嵌入动作，使用Actions Asset设置的控制方案可以在全军内的多个脚本中通用。而且这样还允许使用Action Maps和Control Schemes功能。
 在直接使用Actions Asset时，也有两种方法：
+
 一. 引用Actions Asset
-首先需要创建一个公开的InputActionsAsset
+1. 首先需要声明一个公开的InputActionsAsset变量并在编辑器中将创建好的Actions Asset拖入，对于需要频繁或循环调用的输入也需要声明一个变量储存
+```cs
+public InputActionAsset actions;
+
+private InputAction moveAction;
+```
+2. 之后可以通过string的方式访问对应名称的动作
+```cs
+moveAction = actions.FindActionMap("gameplay").FindAction("move");
+
+actions.FindActionMap("gameplay").FindAction("jump").performed += OnJump;
+```
+
+二. 通过生成的C#封装访问Actions Asset
+1. 在编辑器中选择Actions Asset并勾选Generate C# Class，这会生成一个同名的C#文件。
+2. 在dai ma zhon
 ### 使用Player Input Asset
 
 ## 动作种类
