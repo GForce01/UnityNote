@@ -45,7 +45,7 @@ public InputAction myAction;
 ```
 具体用法上来说，需要先声明Action变量并在Inspector中完成设置，在代码中需要先[激活](#激活与停止)动作，若要读取输入数值则要么循环拉取信息要么为事件订阅Handler。
 ### 使用Actions Asset
-
+在编辑器中右键新建一个Actions Asset并在其UI中设置。比起使用和代码刚性绑定的嵌入动作，使用Actions Asset设置的控制方案可以在全军内的多个脚本中通用。而且这样还允许使用Action Maps和
 ### 使用Player Input Asset
 
 ## 动作种类
