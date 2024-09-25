@@ -80,5 +80,11 @@ public void Update()
 ```cs
 jumpAction.performed += ctx => { OnJump(ctx); };
 ```
-
+Action Event的回调事件会输入一个CallbackContext，也就是上文中的ctx，因此在定义动作逻辑时无论是否会用到都需要在签名中留下相应的输入。
+```cs
+public void OnJump(InputAction.CallbackContext context)
+{
+    // jump code goes here.
+}
+```
 ####
