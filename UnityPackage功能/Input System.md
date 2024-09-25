@@ -94,8 +94,19 @@ Vector2 moveVector = actions.gameplay.move.ReadValue<Vector2>();
 using UnityEngine.InputSystem;
 ```
 
-### 激活与停止
-
+### 激活与禁用
+在使用特定动作之前需要先将其激活（Enable），可以单独激活某个动作也可以一次激活整个Action Map：
+```cs
+//假设在gameplayActions这个map下有一个lookAction动作
+lookAction.Enable();
+gameplayActions.Enable();
+```
+相应的，当不需要控制的时候需要将其禁用（Disable）
+```cs
+lookAction.Disable();
+gameplayActions.Disable();
+```
+禁用十分重要，尤其是当
 ### 读取Action数值
 读取Action数值一般有两种方法，一种是直接循环拉取数值，另一种是为事件添加[订阅](事件Events#事件需要订阅者，因此需要添加订阅)。
 #### 循环拉取
