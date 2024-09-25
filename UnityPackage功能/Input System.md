@@ -37,7 +37,7 @@ void Update()
     }
 ```
 ### 使用嵌入动作
-跳过Input Action Asset直接在脚本中声明公开的***InputAction***变量，如此一来可以相对简便地享受到Input System的动作绑定的便利性，但是这样无法进行动作分组等操作。具体用法上来说，需要先声明Action变量并在Inspector中完成设置，在代码中需要先[激活](#激活与停止)动作，若要读取输入数值则要么循环拉取信息要么为事件[订阅Handler](Input System#订阅Handler)
+跳过Input Action Asset直接在脚本中声明公开的***InputAction***变量，如此一来可以相对简便地享受到Input System的动作绑定的便利性，但是这样无法进行动作分组等操作。具体用法上来说，需要先声明Action变量并在Inspector中完成设置，在代码中需要先[激活](#激活与停止)动作，若要读取输入数值则要么循环拉取信息要么为事件订阅Handler。
 ###
 
 ## 输入种类
@@ -55,7 +55,18 @@ using UnityEngine.InputSystem;
 ### 读取Action数值
 读取Action数值一般有两种方法，一种是直接循环拉取数值，另一种是为事件添加[订阅](事件Events#事件需要订阅者，因此需要添加订阅)。
 #### 循环拉取
+一般来说在update中运行，不过也可以自己写一个循环[[协程]]
+```cs
+public void Update()
+{
+    Vector2 moveAmount = moveAction.ReadValue<Vector2>();
+}
+```
 
+
+```
 #### 订阅Handler
+```cs
 
+```
 ####
