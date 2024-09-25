@@ -105,7 +105,7 @@
                 "showSearch": false,
                 "searchQuery": "",
                 "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -160,8 +160,11 @@
   },
   "active": "4f9ada3504c27254",
   "lastOpenFiles": [
-    "代码/事件Events.md",
+    "代码/System.Linq.md",
     "UnityPackage功能/Input System.md",
+    "代码/关键字(修饰符).md",
+    "代码/事件Events.md",
+    "代码/传递.md",
     "Player Input.md",
     "ScriptableObject.md",
     "Cinemachine.md",
@@ -173,11 +176,8 @@
     "代码/特殊语法与语法糖.md",
     "代码/构造函数Constructor.md",
     "代码/Unity各方法执行顺序.md",
-    "代码/System.Linq.md",
     "Input",
     "Input.md",
-    "代码/传递.md",
-    "代码/关键字(修饰符).md",
     "Unity功能/动画.md",
     "Resources",
     "().md",

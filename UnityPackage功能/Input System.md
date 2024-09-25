@@ -126,14 +126,19 @@ public void Update()
 ```cs
 InputAction.WasPerformedThisFrame()
 ```
-特别地，对于类行为Button的动作，有三种
+特别地，对于类行为Button的动作，有三种：
+```cs
+InputAction.IsPressed()
+InputAction.WasPressedThisFrame()
+InputAction.WasReleasedThisFrame()
+```
 #### 订阅Handler
 一般对于按钮之类的一次性操作可以直接订阅。
 每个动作流程会产生的事件有三种：
 1. action.started
 2. action.performed
 3. action.canceled
-其中performed会视动作的数值类型决定触发时机。对于Button类动作，仅会在读数第一次超过阈值的时候触发，对于数值类型的动作，每次数值变化的时候都会触发performed。
+其中performed会视动作的数值类型决定触发时机。对于Button类动作，仅会在读数第一次超过阈值的时候触发，对于数值类型的动作，每次数值变化且变化后与默认数值不同的时候都会触发performed。
 ```cs
 jumpAction.performed += ctx => { OnJump(ctx); };
 ```
@@ -145,5 +150,3 @@ public void OnJump(InputAction.CallbackContext context)
 }
 ```
 如果需要读取context的内容，则可以使用ReadValue<TValue>()方法。
-
-###
