@@ -74,11 +74,9 @@ public void Update()
 一般对于按钮之类的一次性操作可以直接订阅。
 每个动作流程会产生的事件有三种：
 1. action.started
-2. action.```
-performed
-```
-3. action.started
-
+2. action.performed
+3. action.canceled
+其中performed
 ```cs
 jumpAction.performed += ctx => { OnJump(ctx); };
 ```
