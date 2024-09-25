@@ -87,7 +87,7 @@ Vector2 moveVector = actions.gameplay.move.ReadValue<Vector2>();
 1. Value
 2. Button
 3. Passthrough
-前两种不必多说，22
+前两张不必多说，按键类的操作一般是button，
 ## 控制种类
 
 ## 组件
