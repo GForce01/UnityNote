@@ -88,7 +88,7 @@ actions.gameplay.jump.performed += OnJump;
 1. Value
 2. Button
 3. Passthrough
-前两种不必多说，按键类的操作一般是button，
+前两种不必多说，按键类的操作一般是button，而需要持续变化的一般选value
 
 # 控制种类
 
@@ -154,6 +154,63 @@ public void OnJump(InputAction.CallbackContext context)
 ```
 如果需要读取context的内容，则可以使用ReadValue\<TValue>()方法。
 #####  CallbackContext内容
+CallbackContext中含有如下成员：
+成员名称 | 变量类型
+-- | --
+action | InputAction
+
+| 名字 | 姓氏 | 
+| ---- | ---- | | 麦克斯 | 普朗克 | | 玛丽 | 居里 |
+
 
 ### 追踪输入
-通过使用InputActionTrace()
+通过使用InputActionTrace类可以对动作进行记录并输出
+```cs
+var trace = new InputActionTrace();
+
+// Subscribe trace to single Action.
+// (Use UnsubscribeFrom to unsubscribe)
+trace.SubscribeTo(myAction);
+
+// Subscribe trace to entire Action Map.
+// (Use UnsubscribeFrom to unsubscribe)
+trace.SubscribeTo(myActionMap);
+
+// Subscribe trace to all Actions in the system.
+trace.SubscribeToAll();
+
+// Record a single triggering of an Action.
+myAction.performed +=
+    ctx =>
+    {
+        if (ctx.ReadValue<float>() > 0.5f)
+            trace.RecordAction(ctx);
+    };
+
+// Output trace to console.
+Debug.Log(string.Join(",\n", trace));
+
+// Walk through all recorded Actions and then clear trace.
+foreach (var record in trace)
+{
+    Debug.Log($"{record.action} was {record.phase} by control {record.control}");
+
+    // To read out the value, you either have to know the value type or read the
+    // value out as a generic byte buffer. Here, we assume that the value type is
+    // float.
+
+    Debug.Log("Value: " + record.ReadValue<float>());
+
+    // If it's okay to accept a GC hit, you can also read out values as objects.
+    // In this case, you don't have to know the value type.
+
+    Debug.Log("Value: " + record.ReadValueAsObject());
+}
+trace.Clear();
+
+// Unsubscribe trace from everything.
+trace.UnsubscribeFromAll();
+
+// Release memory held by trace.
+trace.Dispose();
+```
