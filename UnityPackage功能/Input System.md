@@ -44,7 +44,7 @@ void Update()
 ```cs
 public InputAction myAction;
 ```
-具体用法上来说，需要先声明Action变量并在Inspector中完成设置，在代码中需要先[激活](#激活与停止)动作，若要读取输入数值则要么***循环拉取***信息要么为事件***订阅Handler***。
+具体用法上来说，需要先声明Action变量并在Inspector中完成设置，在代码中需要先[激活](#激活与停止)动作，若要读取输入数值则要么***循环调用***信息要么为事件***订阅Handler***。
 ### 使用Actions Asset
 在编辑器中右键新建一个Actions Asset并在其UI中设置。比起使用和代码刚性绑定的嵌入动作，使用Actions Asset设置的控制方案可以在全军内的多个脚本中通用。而且这样还允许使用Action Maps和Control Schemes功能。
 在直接使用Actions Asset时，也有两种方法：
@@ -74,7 +74,7 @@ void Awake(){
 	actions = new ExampleActions();
 }
 ```
-4. 之后就可以在脚本中通过***Actions类.Action Maps名称.Action名称***的方法访问到对应动作
+3. 之后就可以在脚本中通过***Actions类.Action Maps名称.Action名称***的方法访问到对应动作
 ```cs
 //Actions类.Action Maps名称.Action名称
 Vector2 moveVector = actions.gameplay.move.ReadValue<Vector2>();
@@ -82,12 +82,13 @@ Vector2 moveVector = actions.gameplay.move.ReadValue<Vector2>();
 ### 使用[[Input System#Player Input|Player Input]]组件
 最后一种方法是使用Player Input组件，一般来说组件应该与处理动作逻辑的脚本放在同一个物体下。使用组件可以减少很多代码量，但是相应的需要更多编辑器内操作同时在debug的时候会有些困难，需要自己取舍。
 
-## 动作种类
+## 数据种类
 一共有三种动作种类：
 1. Value
 2. Button
 3. Passthrough
-## 数据种类
+前两种不必多说，22
+## 控制种类
 
 ## 组件
 ### Player Input
@@ -113,7 +114,7 @@ gameplayActions.Disable();
 禁用十分重要，尤其是在与动作相关连的逻辑可能被禁用的时候，否则可能会引起报错
 ### 读取Action数值
 读取Action数值一般有两种方法，一种是直接循环拉取数值，另一种是为事件添加[订阅](事件Events#事件需要订阅者，因此需要添加订阅)。
-#### 循环拉取
+#### 循环查询（Polling）
 一般来说在update中运行，不过也可以自己写一个循环[[协程]]。
 ```cs
 public void Update()
@@ -121,11 +122,11 @@ public void Update()
     Vector2 moveAmount = moveAction.ReadValue<Vector2>();
 }
 ```
-如果需要判断当前帧是否发生操作可以使用
+如果需要判断当前帧是否发生操作可以使用：
 ```cs
 InputAction.WasPerformedThisFrame()
 ```
-
+特别地，对于类行为Button的动作，有三种
 #### 订阅Handler
 一般对于按钮之类的一次性操作可以直接订阅。
 每个动作流程会产生的事件有三种：
