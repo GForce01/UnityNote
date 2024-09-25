@@ -79,7 +79,7 @@ void Awake(){
 //Actions类.Action Maps名称.Action名称
 Vector2 moveVector = actions.gameplay.move.ReadValue<Vector2>();
 ```
-### 使用[[Input System#Player Input]]组件
+### 使用[[|Input System#Player Input]]组件
 最后一种方法是使用Player Input组件，一般来说组件应该与处理动作逻辑的脚本放在同一个物体下。使用组件可以减少很多代码量，但是相应的需要更多编辑器内操作同时在debug的时候会有些困难，需要自己取舍。
 
 ## 动作种类
