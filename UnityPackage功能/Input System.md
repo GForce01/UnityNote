@@ -1,4 +1,4 @@
-## Input System结构与概念
+# Input System结构与概念
 ### Input System简介
 Input System主要面向需要在多种不同控制方案间切换的需求，比起老输入系统来说Input System最大的优势在于没有通过代码将行为与特定按键刚性连接，而是通过一系列绑定关系将多个操作映射到一个行为上。
 ### Input System中的概念
@@ -14,7 +14,7 @@ Input System主要面向需要在多种不同控制方案间切换的需求，�
 9. 绑定-动作和控制之间的关联。
 10. Action Maps-一组动作，比如游戏的主界面和游戏界面需要两套不同的操作时就可以各自设置一个Action Map
 
-## Input System的几种工作架构
+# Input System的几种工作架构
 Input System一共有四种工作流程架构，各自拥有不同的灵活性和抽象性。
 ### 直接使用脚本读取设备状态
 直接在脚本中读取设备输入，方法类似于老输入系统，操作与逻辑硬性绑定，完全没有用到Input System的特色，不推荐使用
@@ -78,23 +78,26 @@ void Awake(){
 ```cs
 //Actions类.Action Maps名称.Action名称
 Vector2 moveVector = actions.gameplay.move.ReadValue<Vector2>();
+actions.gameplay.jump.performed += OnJump;
 ```
 ### 使用[[Input System#Player Input|Player Input]]组件
 最后一种方法是使用Player Input组件，一般来说组件应该与处理动作逻辑的脚本放在同一个物体下。使用组件可以减少很多代码量，但是相应的需要更多编辑器内操作同时在debug的时候会有些困难，需要自己取舍。
 
-## 数据种类
+# 数据种类
 一共有三种动作种类：
 1. Value
 2. Button
 3. Passthrough
-前两张不必多说，按键类的操作一般是button，
-## 控制种类
+前两种不必多说，按键类的操作一般是button，
 
-## 组件
+# 控制种类
+
+
+# 组件
 ### Player Input
 
 
-## Input System Scripting & API
+# Input System Scripting & API
 在一切使用Input System逻辑的代码中请务必记得在开头添加引用
 ```cs
 using UnityEngine.InputSystem;
@@ -114,7 +117,7 @@ gameplayActions.Disable();
 禁用十分重要，尤其是在与动作相关连的逻辑可能被禁用的时候，否则可能会引起报错
 ### 读取Action数值
 读取Action数值一般有两种方法，一种是直接循环拉取数值，另一种是为事件添加[订阅](事件Events#事件需要订阅者，因此需要添加订阅)。
-#### 循环查询（Polling）
+##### 循环查询（Polling）
 一般来说在update中运行，不过也可以自己写一个循环[[协程]]。
 ```cs
 public void Update()
@@ -132,7 +135,7 @@ InputAction.IsPressed()
 InputAction.WasPressedThisFrame()
 InputAction.WasReleasedThisFrame()
 ```
-#### 订阅Handler
+##### 订阅Handler
 一般对于按钮之类的一次性操作可以直接订阅。
 每个动作流程会产生的事件有三种：
 1. action.started
@@ -149,4 +152,8 @@ public void OnJump(InputAction.CallbackContext context)
     // jump code goes here.
 }
 ```
-如果需要读取context的内容，则可以使用ReadValue<TValue>()方法。
+如果需要读取context的内容，则可以使用ReadValue\<TValue>()方法。
+#####  CallbackContext内容
+
+### 追踪输入
+通过使用InputActionTrace()
