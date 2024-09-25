@@ -14,6 +14,7 @@ Input System主要面向需要在多种不同控制方案间切换的需求，�
 9. 绑定-动作和控制之间的关联。
 
 ## Input System的几种工作架构
+In p
 ### 直接使用脚本读取设备状态
 直接在脚本中读取设备输入，方法类似于老输入系统，操作与逻辑硬性绑定，完全没有用到Input System的特色，不推荐使用
 ```cs
@@ -43,7 +44,9 @@ void Update()
 public InputAction myAction;
 ```
 具体用法上来说，需要先声明Action变量并在Inspector中完成设置，在代码中需要先[激活](#激活与停止)动作，若要读取输入数值则要么循环拉取信息要么为事件订阅Handler。
-###
+### 使用Actions Asset
+
+### 使用Player Input Asset
 
 ## 输入种类
 
