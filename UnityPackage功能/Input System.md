@@ -48,9 +48,12 @@ public InputAction myAction;
 
 ### 使用Player Input Asset
 
-## 输入种类
-
-## 行为种类
+## 动作种类
+一共有三种动作种类：
+1. Value
+2. Button
+3. Passthrough
+## 数据种类
 
 ## Input System Scripting & API
 在一切使用Input System逻辑的代码中请务必记得在开头添加引用
@@ -87,4 +90,6 @@ public void OnJump(InputAction.CallbackContext context)
     // jump code goes here.
 }
 ```
-####
+如果需要读取context的内容，则可以使用ReadValue<TValue>()方法。
+
+###
