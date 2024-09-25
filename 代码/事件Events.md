@@ -9,14 +9,20 @@
 
 ### 基础事件怎么用
 ##### 首先定义事件
-	event EventHandler OnMyEvent;
+```cs
+event EventHandler OnMyEvent;
+```
 
 ##### 事件需要订阅者，因此需要添加订阅
-	objectWithEvent.OnMyEvent += SomeFunction;
+```cs
+objectWithEvent.OnMyEvent += SomeFunction;
+```
 
 ##### 触发事件
-	OnMyEvent?.Invoke(this, EventArgs.Empty);
-这里需要两个参数Object sender（发出者） 和 EventArgs，[?.](特殊语法（语法糖）#?. **空条件操作符（null-conditional operator）**)运算符用来检测事件是否成立（存在订阅者，!=null）以防止发生错误。
+```cs
+OnMyEvent?.Invoke(this, EventArgs.Empty);
+```
+这里需要两个参数Object sender（发出者） 和 EventArgs，[](特殊语法与语法糖#?. **空条件操作符（null-conditional operator）**运算符用来检测事件是否成立（存在订阅者，!=null）以防止发生错误。
 
 ##### 退订事件
 	objectWithEvent.OnMyEvent -= SomeFunction;
