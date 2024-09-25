@@ -83,15 +83,15 @@ actions.gameplay.jump.performed += OnJump;
 ### 使用[[Input System#Player Input|Player Input]]组件
 最后一种方法是使用Player Input组件，一般来说组件应该与处理动作逻辑的脚本放在同一个物体下。使用组件可以减少很多代码量，但是相应的需要更多编辑器内操作同时在debug的时候会有些困难，需要自己取舍。
 
-# 数据种类
+# 绑定类型
+
+
+# 数据类型
 一共有三种动作种类：
 1. Value
 2. Button
 3. Passthrough
 前两种不必多说，按键类的操作一般是button，而需要持续变化的一般选value
-
-# 控制种类
-
 
 # 组件
 ### Player Input
@@ -155,13 +155,14 @@ public void OnJump(InputAction.CallbackContext context)
 如果需要读取context的内容，则可以使用ReadValue\<TValue>()方法。
 #####  CallbackContext内容
 CallbackContext中含有如下成员：
-成员名称 | 变量类型
--- | --
-action | InputAction
 
-| 名字 | 姓氏 | 
-| ---- | ---- | | 麦克斯 | 普朗克 | | 玛丽 | 居里 |
-
+| 成员名称        | 变量类型              |
+| ----------- | ----------------- |
+| action      | InputAction       |
+| canceled    | Bool              |
+| control     | InputControl      |
+| duration    | double            |
+| interaction | IInputInteraction |
 
 ### 追踪输入
 通过使用InputActionTrace类可以对动作进行记录并输出
