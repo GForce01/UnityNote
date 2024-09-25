@@ -121,7 +121,11 @@ public void Update()
     Vector2 moveAmount = moveAction.ReadValue<Vector2>();
 }
 ```
-如果需要判断是否
+如果需要判断当前帧是否发生操作可以使用
+```cs
+InputAction.WasPerformedThisFrame()
+```
+
 #### 订阅Handler
 一般对于按钮之类的一次性操作可以直接订阅。
 每个动作流程会产生的事件有三种：
