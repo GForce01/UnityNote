@@ -156,13 +156,17 @@ public void OnJump(InputAction.CallbackContext context)
 #####  CallbackContext内容
 CallbackContext中含有如下成员：
 
-| 成员名称        | 变量类型              |
-| ----------- | ----------------- |
-| action      | InputAction       |
-| canceled    | Bool              |
-| control     | InputControl      |
-| duration    | double            |
-| interaction | IInputInteraction |
+| 成员名称        | 变量类型              | 备注            |
+| ----------- | ----------------- | ------------- |
+| action      | InputAction       |               |
+| canceled    | Bool              |               |
+| control     | InputControl      |               |
+| duration    | double            |               |
+| interaction | IInputInteraction | 用于判断交互种类（长按等） |
+| performed   | bool              | 判断是否刚刚被执行     |
+| phase       | InputActionPhase  |               |
+| started     | bool              |               |
+| start       |                   |               |
 
 ### 追踪输入
 通过使用InputActionTrace类可以对动作进行记录并输出
