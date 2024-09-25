@@ -48,9 +48,9 @@ public InputAction myAction;
 ### 使用Actions Asset
 在编辑器中右键新建一个Actions Asset并在其UI中设置。比起使用和代码刚性绑定的嵌入动作，使用Actions Asset设置的控制方案可以在全军内的多个脚本中通用。而且这样还允许使用Action Maps和Control Schemes功能。
 在直接使用Actions Asset时，也有两种方法：
-
+1. 直接在编辑器中引用Actions Asset
+	
 ### 使用Player Input Asset
-
 
 ## 动作种类
 一共有三种动作种类：
