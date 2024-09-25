@@ -76,8 +76,9 @@ public void Update()
 1. action.started
 2. action.performed
 3. action.canceled
-其中performed
+其中performed会视动作的数值类型决定触发时机。对于Button类动作，仅会在读数第一次超过阈值的时候触发，对于数值类型的动作，每次数值变化的时候都会触发performed。
 ```cs
 jumpAction.performed += ctx => { OnJump(ctx); };
 ```
+
 ####
