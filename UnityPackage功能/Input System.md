@@ -65,7 +65,20 @@ actions.FindActionMap("gameplay").FindAction("jump").performed += OnJump;
 
 二. 通过生成的C#封装访问Actions Asset
 1. 在编辑器中选择Actions Asset并勾选Generate C# Class，这会生成一个同名的C#文件。
-2. 在dai ma zhon
+2. 在代码中创建一个Actions C#类的实例
+```cs
+//假设生成的Actions类名称叫做ExampleActions
+ExampleActions actions;
+
+void Awake(){
+	actions = new ExampleActions();
+}
+```
+4. 之后就可以在脚本中通过***Actions类.Action Maps名称.Action名称***的方法访问到对应动作
+```cs
+//Actions类.Action Maps名称.Action名称
+Vector2 moveVector = actions.gameplay.move.ReadValue<Vector2>();
+```
 ### 使用Player Input Asset
 
 ## 动作种类
