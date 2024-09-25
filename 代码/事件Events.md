@@ -22,25 +22,33 @@ objectWithEvent.OnMyEvent += SomeFunction;
 ```cs
 OnMyEvent?.Invoke(this, EventArgs.Empty);
 ```
-这里需要两个参数Object sender（发出者） 和 EventArgs，[](特殊语法与语法糖#?. **空条件操作符（null-conditional operator）**运算符用来检测事件是否成立（存在订阅者，!=null）以防止发生错误。
+这里需要两个参数Object sender（发出者） 和 EventArgs，[?.](特殊语法与语法糖#?. **空条件操作符（null-conditional operator）**)运算符用来检测事件是否成立（存在订阅者，!=null）以防止发生错误。
 
 ##### 退订事件
-	objectWithEvent.OnMyEvent -= SomeFunction;
+```cs
+objectWithEvent.OnMyEvent -= SomeFunction;
+```
 
 ### EventHandler
 EventHandler<TEventArgs\> 是一个预定义的委托，专门用来处理事件。它的定义如下：
-	public delegate void EventHandler<TEventArgs\>(object sender, TEventArgs e);
+```cs
+public delegate void EventHandler<TEventArgs\>(object sender, TEventArgs e);
+```
 
 ### 传递参数
 event触发后需要传递一个EventArgs类参数，如果不需要参数的话可以使用EventArgs.Empty。
 但是如果需要自定义传递的参数的话则需要新建一个继承EventArgs的类，如：
-	public class MyEventArgs : EventArgs
-    {
-        public int num;
-    }
+```cs
+public class MyEventArgs : EventArgs
+{
+    public int num;
+}
+```
 相应的，在调用的时候
-	int count = 2;
-	OnMyEvent?.Invoke(this, ***new*** MyEventArgs{num = count});
+```cs
+int count = 2;
+OnMyEvent?.Invoke(this, new MyEventArgs{num = count});
+```
 **注意这里需要使用new新建实例**。
 
 还有就是，在定义事件的时候可以进行约束，限定只能使用某一特定EventArgs。
