@@ -93,6 +93,9 @@ actions.gameplay.jump.performed += OnJump;
 3. Passthrough
 前两种不必多说，按键类的操作一般是button，而需要持续变化的一般选value
 
+# 阶段
+一共有五种
+
 # 组件
 ### Player Input
 
@@ -156,18 +159,28 @@ public void OnJump(InputAction.CallbackContext context)
 #####  CallbackContext内容
 CallbackContext中含有如下成员：
 
-| 成员名称        | 变量类型              | 备注            |
-| ----------- | ----------------- | ------------- |
-| action      | InputAction       |               |
-| canceled    | Bool              |               |
-| control     | InputControl      |               |
-| duration    | double            |               |
-| interaction | IInputInteraction | 用于判断交互种类（长按等） |
-| performed   | bool              | 判断是否刚刚被执行     |
-| phase       | InputActionPhase  |               |
-| started     | bool              |               |
-| start       |                   |               |
-
+| 成员名称             | 变量类型              | 备注                   |
+| ---------------- | ----------------- | -------------------- |
+| action           | InputAction       |                      |
+| canceled         | Bool              |                      |
+| control          | InputControl      |                      |
+| duration         | double            |                      |
+| interaction      | IInputInteraction | 用于判断交互种类（长按等）        |
+| performed        | bool              | 判断是否刚刚被执行            |
+| phase            | InputActionPhase  |                      |
+| started          | bool              |                      |
+| startTime        | double            | 仅对拥有且经历过start阶段的动作生效 |
+| time             | double            | 动作被输入时间激活的时间         |
+| valueSizeInBytes | int32             |                      |
+| valueType        | type              |                      |
+另外还有五个方法：
+```cs
+void ReadValue(void *buffer, int bufferSize)
+TValue ReadValue<TValue>()
+bool ReadValueAsButton()
+object ReadValueAsObject()
+override string ToString()
+```
 ### 追踪输入
 通过使用InputActionTrace类可以对动作进行记录并输出
 ```cs
