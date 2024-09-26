@@ -115,6 +115,8 @@ actions.gameplay.jump.performed += OnJump;
 ### Player Input
 组件会自动处理动作的启用与禁用
 
+### Input System UI Input Module
+
 # Input System Scripting & API
 在一切使用Input System逻辑的代码中请务必记得在开头添加引用
 ```cs
