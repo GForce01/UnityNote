@@ -44,7 +44,7 @@ void Update()
 ```cs
 public InputAction myAction;
 ```
-具体用法上来说，需要先声明Action变量并在Inspector中完成设置，在代码中需要先[激活](#激活与停止)动作，若要读取输入数值则要么***循环调用***信息要么为事件***订阅Handler***。
+具体用法上来说，需要先声明Action变量并在Inspector中完成设置，在代码中需要先[启用](#启用与禁用)动作，若要读取输入数值则要么***循环调用***信息要么为事件***订阅Handler***。
 ### 使用Actions Asset
 在编辑器中右键新建一个Actions Asset并在其UI中设置。比起使用和代码刚性绑定的嵌入动作，使用Actions Asset设置的控制方案可以在全军内的多个脚本中通用。而且这样还允许使用Action Maps和Control Schemes功能。
 在直接使用Actions Asset时，也有两种方法：
@@ -88,18 +88,17 @@ actions.gameplay.jump.performed += OnJump;
 
 # 数据类型
 一共有三种动作种类：
-1. Value
-2. Button
+1. Value - 持续变化的数值一般选value。如果同时存在多个输入则取最显著的输入为最终结果。在该类型动作被启用时会进行初始检查如果存在输入则返回数值。当数值开始变化时激活started，之后每次数值变化激活一次performed，当数值回归默认时激活canceled。
+2. Button - 其实和value很像，本质是一个带有激活阈值的单轴，虽然实际用起来基本都是按钮。
 3. Passthrough
-前两种不必多说，按键类的操作一般是button，而需要持续变化的一般选value
 
 # 阶段Phase
 一共有五种阶段：
 1. Disabled - 禁用
 2. Waiting - 启用等待输入
-3. Started - 仅部分动作拥有，典型例子为长按，指收到输入但尚未满足操作判定条件
+3. Started - 仅部分绑定方式拥有，典型例子为长按，指收到输入但尚未满足操作判定条件
 4. Performed - 满足操作判定条件操作完成
-5. Canceled - 操作取消、结束或被禁用，对于button意味着释放到阈值之下，对于value意味着回归默认数值，而passthrough仅在操作过程中动作被禁用时
+5. Canceled - 仅部分交互绑定方式拥有，操作取消、结束或被禁用，对于button意味着释放到阈值之下，对于value意味着回归默认数值，而passthrough仅在操作过程中动作被禁用或设备离线时才会触发
 
 
 # 组件
@@ -111,7 +110,7 @@ actions.gameplay.jump.performed += OnJump;
 ```cs
 using UnityEngine.InputSystem;
 ```
-### 激活与禁用
+### 启用与禁用
 在使用特定动作之前需要先将其激活（Enable），可以单独激活某个动作也可以一次激活整个Action Map：
 ```cs
 //假设在gameplayActions这个map下有一个lookAction动作
