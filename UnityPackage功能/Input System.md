@@ -93,8 +93,14 @@ actions.gameplay.jump.performed += OnJump;
 3. Passthrough
 前两种不必多说，按键类的操作一般是button，而需要持续变化的一般选value
 
-# 阶段
-一共有五种
+# 阶段Phase
+一共有五种阶段：
+1. Disabled - 禁用
+2. Waiting - 启用等待输入
+3. Started - 仅部分动作拥有，典型例子为长按，指收到输入但尚未满足操作判定条件
+4. Performed - 满足操作判定条件操作完成
+5. Canceled - 操作取消、结束或被禁用，对于button意味着释放到阈值之下，对于value意味着回归默认数值，而passthrough仅在操作过程中动作被禁用时
+
 
 # 组件
 ### Player Input
