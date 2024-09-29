@@ -138,7 +138,7 @@ public bool SwitchCurrentControlScheme(params InputDevice[] devices)
 3. Invoke Unity Events
 4. Invoke CSharp Events
 ###### Send Messages和Broadcast Messages
-这两种方法的区别是前者必须保证逻辑组件和input组件在同一个物体而后者逻辑可以存在于input组件所在物体的子集上。当使用这两种方法时组件会寻找并调用自定义脚本中名为“On+行为名”（如Jump对应OnJump）的函数，函数接受参数为无参数或一个Input Value参数
+这两种方法的区别是前者必须保证逻辑组件和input组件在同一个物体而后者逻辑可以存在于input组件所在物体的子集上。当使用这两种方法时组件会寻找并调用自定义脚本中名为“On+行为名”（如Jump对应OnJump）的函数，函数接受参数为无参数或一个[[Input System#Input Value|Input Value]]参数。
 
 ### Input System UI Input Module
 
