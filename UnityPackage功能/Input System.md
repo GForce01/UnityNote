@@ -131,7 +131,7 @@ public void SwitchCurrentControlScheme(string controlScheme, params InputDevice[
 
 public bool SwitchCurrentControlScheme(params InputDevice[] devices)
 ```
-
+##### Behaviour
 ### Input System UI Input Module
 
 # Input System Scripting & API
@@ -153,7 +153,7 @@ gameplayActions.Disable();
 ```
 禁用十分重要，尤其是在与动作相关连的逻辑可能被禁用的时候，否则可能会引起报错
 ### 读取Action数值
-读取Action数值一般有两种方法，一种是直接循环拉取数值，另一种是为事件添加[订阅](事件Events#事件需要订阅者，因此需要添加订阅)。
+读取Action数值一般有三种方法，循环拉取数值，为事件添加[订阅](事件Events#事件需要订阅者，因此需要添加订阅)，以及通过Input 组件直接发送数值给方法。
 ##### 循环查询（Polling）
 一般来说在update中运行，不过也可以自己写一个循环[[协程]]。
 ```cs
@@ -215,6 +215,8 @@ bool ReadValueAsButton()
 object ReadValueAsObject()
 override string ToString()
 ```
+##### 通过Input组件发送数值到方法
+当使用
 ### 追踪输入
 通过使用InputActionTrace类可以对动作进行记录并输出
 ```cs
