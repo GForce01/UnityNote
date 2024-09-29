@@ -159,7 +159,7 @@ OnControlsChanged(PlayerInput input)
 using UnityEngine.InputSystem;
 ```
 ### Input Value
-Input Value是对CallbackContext的封装
+Input Value是对CallbackContext的封装。
 
 ### 启用与禁用
 在使用特定动作之前需要先将其激活（Enable），可以单独激活某个动作也可以一次激活整个Action Map：
@@ -238,7 +238,14 @@ object ReadValueAsObject()
 override string ToString()
 ```
 ##### 通过Input组件发送数值到方法
-当使用
+当使用[[Input System#Send Messages和Broadcast Messages|Send Messages和Broadcast Messages]]时，会调用名称为“On+行为名”的方法，参数可以为空或一个InputValue。若要读取InputValue数值可以使用Get\<T>()方法
+```cs
+public void OnMove(InputValue value){
+	var v = value.Get<Vector2>();
+}
+```
+注意Get接受的数值类型要对应action绑定的控制类型。
+InputValue仅在此回调生命周期内有效，因此存储其引用并在之后使用Get将无法正常获取数值。
 ### 追踪输入
 通过使用InputActionTrace类可以对动作进行记录并输出
 ```cs
