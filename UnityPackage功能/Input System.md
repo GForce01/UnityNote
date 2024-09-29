@@ -149,7 +149,7 @@ OnDeviceLost(PlayerInput input)
 OnControlsChanged(PlayerInput input)
 ```
 ###### Invoke Unity Events
-
+使用这种方法和常规的自定义Unity Event一样，只要在编辑器中设置好就行，十分方便。对应的方法格式和订阅给performed等回调的handler一样。
 
 ### Input System UI Input Module
 
@@ -168,7 +168,7 @@ public bool isPressed { get; }
 ```cs
 public object Get()
 public TValue Get<TValue>()
-//第一种
+//第一种返回值是个object，而且会产生垃圾，一般用第二种
 ```
 #####  CallbackContext内容
 CallbackContext中含有如下成员：
