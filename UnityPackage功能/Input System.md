@@ -115,17 +115,23 @@ actions.gameplay.jump.performed += OnJump;
 ### Player Input
 组件会自动处理动作的启用与禁用，以及回调函数的设置，同时如果存在多个input组件读取一个action的情况还会自动创建action的副本。
 ##### 组件方法
-以下列出几个比较有用的组件方法
+以下列出几个比较有用的组件方法：
 启用与禁用输入，一般来说组输入的启用状态随组件启用状态变化，不过也可以在组件启用的情况下单独使用DeactivateInput()禁用输入。
 ```cs
 public void ActivateInput()
 public void DeactivateInput()
 ```
-切换ActionMap
+切换Action Map。
 ```cs
 public void SwitchCurrentActionMap(string mapNameOrId)
 ```
-切换
+切换Control Scheme，这两个的不同之处在于第一个是将某个设备切换为特定scheme，第二个是自动选择合适的scheme。
+``` cs
+public void SwitchCurrentControlScheme(string controlScheme, params InputDevice[] devices)
+
+public bool SwitchCurrentControlScheme(params InputDevice[] devices)
+```
+
 ### Input System UI Input Module
 
 # Input System Scripting & API
