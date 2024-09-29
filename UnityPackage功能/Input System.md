@@ -158,8 +158,43 @@ OnControlsChanged(PlayerInput input)
 ```cs
 using UnityEngine.InputSystem;
 ```
-### Input Value
-Input Value是对CallbackContext的封装。
+##### Input Value
+Input Value是对CallbackContext的封装，以便将Context作为object传递。
+其拥有一个属性：
+```cs
+public bool isPressed { get; }
+```
+以及两个方法
+```cs
+public object Get()
+public TValue Get<TValue>()
+//第一种
+```
+#####  CallbackContext内容
+CallbackContext中含有如下成员：
+
+| 成员名称             | 变量类型              | 备注                   |
+| ---------------- | ----------------- | -------------------- |
+| action           | InputAction       |                      |
+| canceled         | Bool              |                      |
+| control          | InputControl      |                      |
+| duration         | double            |                      |
+| interaction      | IInputInteraction | 用于判断交互种类（长按等）        |
+| performed        | bool              | 判断是否刚刚被执行            |
+| phase            | InputActionPhase  |                      |
+| started          | bool              |                      |
+| startTime        | double            | 仅对拥有且经历过start阶段的动作生效 |
+| time             | double            | 动作被输入时间激活的时间         |
+| valueSizeInBytes | int32             |                      |
+| valueType        | type              |                      |
+另外还有五个方法：
+```cs
+void ReadValue(void *buffer, int bufferSize)
+TValue ReadValue<TValue>()
+bool ReadValueAsButton()
+object ReadValueAsObject()
+override string ToString()
+```
 
 ### 启用与禁用
 在使用特定动作之前需要先将其激活（Enable），可以单独激活某个动作也可以一次激活整个Action Map：
@@ -212,31 +247,6 @@ public void OnJump(InputAction.CallbackContext context)
 }
 ```
 如果需要读取context的内容，则可以使用ReadValue\<TValue>()方法。
-#####  CallbackContext内容
-CallbackContext中含有如下成员：
-
-| 成员名称             | 变量类型              | 备注                   |
-| ---------------- | ----------------- | -------------------- |
-| action           | InputAction       |                      |
-| canceled         | Bool              |                      |
-| control          | InputControl      |                      |
-| duration         | double            |                      |
-| interaction      | IInputInteraction | 用于判断交互种类（长按等）        |
-| performed        | bool              | 判断是否刚刚被执行            |
-| phase            | InputActionPhase  |                      |
-| started          | bool              |                      |
-| startTime        | double            | 仅对拥有且经历过start阶段的动作生效 |
-| time             | double            | 动作被输入时间激活的时间         |
-| valueSizeInBytes | int32             |                      |
-| valueType        | type              |                      |
-另外还有五个方法：
-```cs
-void ReadValue(void *buffer, int bufferSize)
-TValue ReadValue<TValue>()
-bool ReadValueAsButton()
-object ReadValueAsObject()
-override string ToString()
-```
 ##### 通过Input组件发送数值到方法
 当使用[[Input System#Send Messages和Broadcast Messages|Send Messages和Broadcast Messages]]时，会调用名称为“On+行为名”的方法，参数可以为空或一个InputValue。若要读取InputValue数值可以使用Get\<T>()方法
 ```cs
