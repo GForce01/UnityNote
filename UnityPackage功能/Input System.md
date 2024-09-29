@@ -149,8 +149,36 @@ OnDeviceLost(PlayerInput input)
 OnControlsChanged(PlayerInput input)
 ```
 ###### Invoke Unity Events
-使用这种方法和常规的自定义Unity Event一样，只要在编辑器中设置好就行，十分方便。对应的方法格式和订阅给performed等回调的handler一样。
-
+使用这种方法和常规的自定义Unity Event一样，只要在编辑器中设置好就行，十分方便。对应的方法格式和订阅给performed等事件的handler一样。
+###### Invoke CSharp Events
+原理和Invoke Unity Events类似，但是这里仅支持API提供的CS事件，一共有三个：
+1. onActionTriggered
+2. onDeviceLost
+3. onDeviceRegained
+需要自己为事件订阅回调方法，并且因为所有的操作都集成在onActionTriggered中因此需要读取CallbackContext.action.name来判断收到了什么操作：
+```cs
+input.onActionTriggered += OnActionTrigger;
+public void OnActionTrigger(InputAction.CallbackContext context) 
+{ 
+	switch (context.action.name) 
+	{ 
+		case "Fire": 
+			//输入阶段的判断 触发阶段 才去做逻辑 
+			if(context.phase == InputActionPhase.Performed) 
+				print("开火"); 
+			break; 
+	
+		case "Look": 
+			print("看向"); 
+			print(context.ReadValue<Vector2>()); 
+			break; 
+		
+		case "Move": 
+			print("移动"); 
+			print(context.ReadValue<Vector2>()); break; 
+	} 
+}
+```
 ### Input System UI Input Module
 
 # Input System Scripting & API
@@ -307,3 +335,6 @@ trace.UnsubscribeFromAll();
 // Release memory held by trace.
 trace.Dispose();
 ```
+
+# 参考
+https://menma.top/2099
