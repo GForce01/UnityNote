@@ -138,7 +138,18 @@ public bool SwitchCurrentControlScheme(params InputDevice[] devices)
 3. Invoke Unity Events
 4. Invoke CSharp Events
 ###### Send Messages和Broadcast Messages
-这两种方法的区别是前者必须保证逻辑组件和input组件在同一个物体而后者逻辑可以存在于input组件所在物体的子集上。当使用这两种方法时组件会寻找并调用自定义脚本中名为“On+行为名”（如Jump对应OnJump）的函数，函数接受参数为无参数或一个[[Input System#Input Value|Input Value]]参数。
+这两种方法的区别是前者必须保证逻辑组件和input组件在同一个物体而后者逻辑可以存在于input组件所在物体的子集上。当使用这两种方法时组件会寻找并调用自定义脚本中名为“On+行为名”（如Jump对应OnJump）的函数，函数接受参数为无参数或一个[[Input System#Input Value|Input Value]]参数。使用方法参见[[Input System#通过Input组件发送数值到方法|通过Input组件发送数值到方法]]。
+除了每个action以外，还有三个默认的设备相关函数可以调用：
+```cs
+//设备注册
+OnDeviceRegained(PlayerInput input)
+//设备丢失
+OnDeviceLost(PlayerInput input)
+//设备切换
+OnControlsChanged(PlayerInput input)
+```
+###### Invoke Unity Events
+
 
 ### Input System UI Input Module
 
@@ -148,6 +159,7 @@ public bool SwitchCurrentControlScheme(params InputDevice[] devices)
 using UnityEngine.InputSystem;
 ```
 ### Input Value
+Input Value是对CallbackContext的封装
 
 ### 启用与禁用
 在使用特定动作之前需要先将其激活（Enable），可以单独激活某个动作也可以一次激活整个Action Map：
