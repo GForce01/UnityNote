@@ -113,7 +113,7 @@ actions.gameplay.jump.performed += OnJump;
 
 # 组件
 ### Player Input
-组件会自动处理动作的启用与禁用
+组件会自动处理动作的启用与禁用，以及回调函数的设置，同时如果存在多个input组件读取一个action的情况还会自动创建action的副本。
 
 ### Input System UI Input Module
 
