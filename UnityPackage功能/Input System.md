@@ -131,7 +131,15 @@ public void SwitchCurrentControlScheme(string controlScheme, params InputDevice[
 
 public bool SwitchCurrentControlScheme(params InputDevice[] devices)
 ```
-##### Behaviour
+##### Behaviour通知方法
+一共有四种通知游戏对象上的逻辑执行的方法：
+1. Send Messages
+2. Broadcast Messages
+3. Invoke Unity Events
+4. Invoke CSharp Events
+###### Send Messages和Broadcast Messages
+这两种方法的区别是前者必须保证逻辑组件和input组件在同一个物体而后者逻辑可以存在于input组件所在物体的子集上。当使用这两种方法时组件会寻找并调用自定义脚本中名为“On+行为名”（如Jump对应OnJump）的函数，函数接受参数为无参数或一个Input Value参数
+
 ### Input System UI Input Module
 
 # Input System Scripting & API
@@ -139,6 +147,8 @@ public bool SwitchCurrentControlScheme(params InputDevice[] devices)
 ```cs
 using UnityEngine.InputSystem;
 ```
+### Input Value
+
 ### 启用与禁用
 在使用特定动作之前需要先将其激活（Enable），可以单独激活某个动作也可以一次激活整个Action Map：
 ```cs
