@@ -30,9 +30,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "19fb1493b300b669",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "错误处理.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "代码/方法类型.md",
+                "file": "错误处理.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "代码/方法类型.md",
+                "file": "错误处理.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "代码/方法类型.md"
+                "file": "错误处理.md"
               }
             }
           }
@@ -158,8 +170,10 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "4f9ada3504c27254",
+  "active": "19fb1493b300b669",
   "lastOpenFiles": [
+    "代码/方法类型.md",
+    "错误处理.md",
     "代码/方法重载.md",
     "代码/属性和字段.md",
     "代码/委托Delegate.md",
@@ -185,7 +199,6 @@
     "Resources",
     "().md",
     "代码/泛型.md",
-    "代码/方法类型.md",
     "特殊语法（语法糖）.md",
     "代码",
     "Unity功能",
