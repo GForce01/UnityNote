@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "代码/错误处理.md",
+                "file": "代码/事件Events.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "代码/错误处理.md",
+                "file": "代码/事件Events.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "代码/错误处理.md",
+                "file": "代码/事件Events.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "代码/错误处理.md"
+                "file": "代码/事件Events.md"
               }
             }
           }
@@ -170,10 +170,10 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "12ee84a3603e9383",
+  "active": "19fb1493b300b669",
   "lastOpenFiles": [
-    "ScriptableObject.md",
     "代码/错误处理.md",
+    "ScriptableObject.md",
     "UnityPackage功能/Cinemachine.md",
     "代码/特殊语法与语法糖.md",
     "代码/泛型.md",
