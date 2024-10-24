@@ -64,6 +64,15 @@ UnityEvent是Unity对C#Event的改进，主要好处是可以序列化，也就�
 	using UnityEngine.Events;
 之后和其他event并无太大区别。
 
+例子：
+```cs
+public UnityEvent OnClickEvent;
+
+public void OnPointerDown(PointerEventData eventData)
+{
+	OnClickEvent?.Invoke();
+}
+```
 ### Lambda
 记住一些简单的事件处理可以使用[Lambda表达式](特殊语法与语法糖.md#>=Lambda表达式])解决，以下是一段简单的在事件完成时获取EventArgs并设置结束状态的代码：
 	OnCompleted += (sender, args) =>
