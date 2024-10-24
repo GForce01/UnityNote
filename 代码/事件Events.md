@@ -9,39 +9,54 @@
 
 ### 基础事件怎么用
 ##### 首先定义事件
-	event EventHandler OnMyEvent;
+```cs
+event EventHandler OnMyEvent;
+```
 
 ##### 事件需要订阅者，因此需要添加订阅
-	objectWithEvent.OnMyEvent += SomeFunction;
+```cs
+objectWithEvent.OnMyEvent += SomeFunction;
+```
 
 ##### 触发事件
-	OnMyEvent?.Invoke(this, EventArgs.Empty);
-这里需要两个参数Object sender（发出者） 和 EventArgs，[?.](特殊语法（语法糖）#?. **空条件操作符（null-conditional operator）**)运算符用来检测事件是否成立（存在订阅者，!=null）以防止发生错误。
+```cs
+OnMyEvent?.Invoke(this, EventArgs.Empty);
+```
+这里需要两个参数Object sender（发出者） 和 EventArgs，[?.](特殊语法与语法糖#?. **空条件操作符（null-conditional operator）**)运算符用来检测事件是否成立（存在订阅者，!=null）以防止发生错误。
 
 ##### 退订事件
-	objectWithEvent.OnMyEvent -= SomeFunction;
+```cs
+objectWithEvent.OnMyEvent -= SomeFunction;
+```
 
 ### EventHandler
 EventHandler<TEventArgs\> 是一个预定义的委托，专门用来处理事件。它的定义如下：
-	public delegate void EventHandler<TEventArgs\>(object sender, TEventArgs e);
+```cs
+public delegate void EventHandler<TEventArgs\>(object sender, TEventArgs e);
+```
 
 ### 传递参数
 event触发后需要传递一个EventArgs类参数，如果不需要参数的话可以使用EventArgs.Empty。
 但是如果需要自定义传递的参数的话则需要新建一个继承EventArgs的类，如：
-	public class MyEventArgs : EventArgs
-    {
-        public int num;
-    }
+```cs
+public class MyEventArgs : EventArgs
+{
+    public int num;
+}
+```
 相应的，在调用的时候
-	int count = 2;
-	OnMyEvent?.Invoke(this, ***new*** MyEventArgs{num = count});
+```cs
+int count = 2;
+OnMyEvent?.Invoke(this, new MyEventArgs{num = count});
+```
 **注意这里需要使用new新建实例**。
 
 还有就是，在定义事件的时候可以进行约束，限定只能使用某一特定EventArgs。
 	public event EventHandler<MyEventArgs\> MyEvent;
 
 ### Delegate与Action
-//Action is same as 'public deligate void', events can only be invoked inside the class and external methods can only subscribe to it
+//Action is same as 'public delegate void', events can only be invoked inside the class and external methods can only subscribe to it
+[https://community.gamedev.tv/t/eventhandler-vs-action/207563/2]
 
 ### UnityEvent
 UnityEvent是Unity对C#Event的改进，主要好处是可以序列化，也就是可以在编辑器中看到，方便操作。当然还有些[其他好处](https://mycroftcooper.github.io/2021/03/21/Unity%E4%B8%AD%E7%9A%84%E4%BA%8B%E4%BB%B6/#3-3-UnityEvent%E7%9A%84%E4%BD%BF%E7%94%A8)。
@@ -50,7 +65,7 @@ UnityEvent是Unity对C#Event的改进，主要好处是可以序列化，也就�
 之后和其他event并无太大区别。
 
 ### Lambda
-记住一些简单的事件处理可以使用[Lambda表达式](特殊语法（语法糖）#>=Lambda表达式])解决，以下是一段简单的在事件完成时获取EventArgs并设置结束状态的代码：
+记住一些简单的事件处理可以使用[Lambda表达式](特殊语法与语法糖.md#>=Lambda表达式])解决，以下是一段简单的在事件完成时获取EventArgs并设置结束状态的代码：
 	OnCompleted += (sender, args) =>
             {
                 eventArgs = args;

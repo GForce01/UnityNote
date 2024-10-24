@@ -5,18 +5,19 @@
 如果将构造函数设置为private则可以确保类仅可在内部被创建，在单例模式尤为重要。
 
 例子：
-public class Example
+```cs
+public class Calculator
 {
-    private int \_value;
+    private int _value;
 
     public Example(int initialValue)//这里就是构造函数，在创建时执行
     {
         _value = initialValue;
     }
 
-    public int ShowValue
+    public int ShowValue(int newValue)
     {
-        return _value;
+        return _value += newValue;
     }
 }
 
@@ -29,3 +30,4 @@ class Program
         Console.WriteLine(result); // 输出：15
     }
 }
+```
