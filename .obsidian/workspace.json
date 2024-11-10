@@ -21,12 +21,14 @@
             "id": "128ed71779cc2aea",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.7.4"
+                "file": "代码/委托Delegate.md",
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "Release Notes 1.7.4"
+              "title": "委托Delegate"
             }
           }
         ],
@@ -102,6 +104,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "代码/委托Delegate.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +114,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "委托Delegate 的反向链接列表"
             }
           },
           {
@@ -120,11 +123,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "代码/委托Delegate.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "出链"
+              "title": "委托Delegate 的出链列表"
             }
           },
           {
@@ -146,10 +150,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "conflict-files-obsidian-git.md"
+                "file": "代码/委托Delegate.md"
               },
               "icon": "lucide-list",
-              "title": "conflict-files-obsidian-git 的大纲"
+              "title": "委托Delegate 的大纲"
             }
           }
         ]
