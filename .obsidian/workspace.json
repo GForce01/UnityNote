@@ -35,16 +35,17 @@
             "id": "a8268a778313728d",
             "type": "leaf",
             "state": {
-              "type": "release-notes",
+              "type": "markdown",
               "state": {
-                "currentVersion": "1.7.5"
+                "file": "代码/属性和字段.md",
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "Release Notes 1.7.5"
+              "title": "属性和字段"
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -63,7 +64,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -185,20 +187,20 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "a8268a778313728d",
+  "active": "9fe43281895344a6",
   "lastOpenFiles": [
+    "代码/属性和字段.md",
+    "代码/Unity各方法执行顺序.md",
     "conflict-files-obsidian-git.md",
     "代码/泛型.md",
     "代码/关键字(修饰符).md",
     "Resources/ConceptsOverview.svg",
-    "代码/Unity各方法执行顺序.md",
     "代码/特殊语法与语法糖.md",
     "代码/构造函数Constructor.md",
     "代码/传递.md",
     "方法类型.md",
     "代码/方法重载.md",
     "代码/方法类型.md",
-    "代码/属性和字段.md",
     "代码/委托Delegate.md",
     "代码/协程.md",
     "代码/事件Events.md",
