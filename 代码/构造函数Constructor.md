@@ -2,7 +2,7 @@
 
 构造函数的名称与类的名称是完全相同的，并且不会返回任何类型，也不会返回 void。构造函数可用于为某些成员变量设置初始值。有时候一个类不需要运行Start方法，这时候构造函数就很有用。
 
-如果将构造函数设置为private则可以确保类仅可在内部被创建，在单例模式尤为重要。
+如果将构造函数设置为private则可以确保类仅可在内部被创建，在[[单例模式]]尤为重要。
 
 例子：
 ```cs
@@ -10,7 +10,7 @@ public class Calculator
 {
     private int _value;
 
-    public Example(int initialValue)//这里就是构造函数，在创建时执行
+    public Calculator(int initialValue)//这里就是构造函数，在创建时执行
     {
         _value = initialValue;
     }
