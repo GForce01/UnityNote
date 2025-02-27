@@ -51,12 +51,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Unity数据类型.md",
+                "file": "Unity中储存数据.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Unity数据类型"
+              "title": "Unity中储存数据"
             }
           }
         ],
@@ -202,10 +202,11 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "12ee84a3603e9383",
+  "active": "c947c5ef7756c8a4",
   "lastOpenFiles": [
+    "代码/属性和字段.md",
+    "Unity中储存数据.md",
     "异步操作/回调.md",
-    "Unity数据类型.md",
     "Resources/ConceptsOverview.svg",
     "Unity功能/动画.md",
     "Unity功能/Unity Layer.md",
@@ -214,7 +215,6 @@
     "代码/System.Linq.md",
     "代码/委托Delegate.md",
     "代码/特殊语法与语法糖.md",
-    "代码/属性和字段.md",
     "代码/事件Events.md",
     "代码/关键字(修饰符).md",
     "代码/构造函数Constructor.md",
