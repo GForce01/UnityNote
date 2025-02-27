@@ -16,9 +16,12 @@
 ```
 JSON **本质上就是** `Dictionary<string, object>` 的一种表示形式，但是Unity中禁止直接将Json作为对象，但是字典可以直接**映射**为Json。
 Json可以被储存在String中，其与字典互相映射的方法如下：
+**字典转Json**
 ```cs
 string json = JsonConvert.SerializeObject(person, Formatting.Indented);
-Console.WriteLine(json);
 ```
-
+**Json转字典**
+```cs
+Dictionary<string, object> parsedDict = JsonConvert.DeserializeObject<Dictionary<string, object>>(json); 
+```
 ### Class
