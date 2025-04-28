@@ -65,16 +65,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "异步操作/Async.md",
+                "file": "Unity功能/Unity Layer.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Async"
+              "title": "Unity Layer"
+            }
+          },
+          {
+            "id": "d642859cdb45941b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "代码/错误处理.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "错误处理"
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -216,32 +230,33 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "b3658c13e7d3a791",
+  "active": "d642859cdb45941b",
   "lastOpenFiles": [
+    "代码/Assert断言.md",
+    "Unity功能/Unity Layer.md",
+    "Unity功能/动画.md",
+    "Resources/ConceptsOverview.svg",
+    "代码/构造函数Constructor.md",
+    "代码/方法类型.md",
+    "代码/方法重载.md",
+    "代码/关键字(修饰符).md",
+    "代码/泛型.md",
+    "代码/错误处理.md",
+    "代码/传递.md",
+    "代码/如何共享内容/单例模式.md",
+    "异步操作/Async.md",
     "异步操作/协程.md",
     "异步操作/回调.md",
-    "异步操作/Async.md",
     "异步操作/UniTask.md",
     "未命名",
-    "代码/错误处理.md",
-    "代码/如何共享内容/单例模式.md",
-    "代码/传递.md",
-    "代码/关键字(修饰符).md",
     "代码/属性和字段.md",
     "代码/事件Events.md",
     "Unity中储存数据.md",
-    "Resources/ConceptsOverview.svg",
-    "Unity功能/动画.md",
-    "Unity功能/Unity Layer.md",
     "ScriptableObject.md",
     "代码/Unity各方法执行顺序.md",
     "代码/System.Linq.md",
     "代码/委托Delegate.md",
     "代码/特殊语法与语法糖.md",
-    "代码/构造函数Constructor.md",
-    "代码/方法重载.md",
-    "代码/方法类型.md",
-    "代码/泛型.md",
     "UnityPackage功能/Input System.md",
     "异步操作",
     "代码/如何共享内容",
@@ -250,7 +265,6 @@
     "代码",
     "Unity功能",
     "UnityPackage功能",
-    "Resources",
-    "动画.md"
+    "Resources"
   ]
 }
