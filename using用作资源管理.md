@@ -1,9 +1,13 @@
-除了引用命名空间外，Using还可以作为资源管理关键字也就是**资源的自动释放（using块）**  
+除了引用命名空间外，Using还可以作为**资源的自动释放（using块）**  
 
 比如这样写：
-
-
-`using (var file = File.OpenRead("path/to/file")) {     // 在这里使用file } // 出了大括号，file会自动关闭`
+```cs
+using (var file = File.OpenRead("path/to/file"))
+{
+    // 在这里使用file
+}
+// 出了大括号，file会自动关闭
+```
 
 这里 `using` 是创建一个资源（比如文件、网络连接、数据库连接），**在用完之后自动帮你释放掉**，防止忘记关闭导致内存泄漏。
 
