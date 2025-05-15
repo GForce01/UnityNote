@@ -27,16 +27,30 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Unity旋转对象.md",
+                "file": "移动与旋转/Unity旋转对象.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "Unity旋转对象"
             }
+          },
+          {
+            "id": "970c7f03272c2c2f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "移动与旋转/Quaternion运算.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Quaternion运算"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -178,10 +192,12 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "b0bc056221132070",
+  "active": "970c7f03272c2c2f",
   "lastOpenFiles": [
+    "移动与旋转/Unity旋转对象.md",
+    "移动与旋转/Quaternion运算.md",
+    "移动与旋转",
     "UnityPackage功能/Input System.md",
-    "Unity旋转对象.md",
     "UnityPackage功能/Timeline.md",
     "ScriptableObject.md",
     "Unity中储存数据.md",
@@ -206,8 +222,6 @@
     "异步操作/Async.md",
     "异步操作/协程.md",
     "异步操作/回调.md",
-    "异步操作/UniTask.md",
-    "未命名",
     "异步操作",
     "代码/如何共享内容",
     "代码",

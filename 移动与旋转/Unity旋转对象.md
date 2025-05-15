@@ -24,5 +24,7 @@ transform.Rotate
 
 Z与Forward方向相同，X垂直于Forward与Upward组成的平面，最后Y垂直于ZX平面，因此Upward并不一定要与Forward垂直，XY方向根据右手螺旋定理判断
 
+比如Transform.LookAT(Transform target, Vector3 WorldUp)中最终y轴会用上述逻辑尽量接近WorldUp
+
 
 在Quaternion旋转中，两个点lerp结果会是一道直线，slerp则是弧线
