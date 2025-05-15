@@ -1,2 +1,9 @@
-Quaternion相乘
-四元数相乘的的具体意义为赋予相应旋转
+### 使用Quaternion进行旋转运算
+使用Quaternion进行旋转的运算为**相乘**
+例如Q1\*Q2就是指在Q1基础上旋转Q2
+
+而想要去除特定旋转的方式则为：
+Quaternion1 \* Quaternion2.inverse
+
+
+在Quaternion旋转中，两个点lerp结果会是一道直线，slerp则是弧线
