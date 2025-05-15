@@ -8,101 +8,35 @@
         "type": "tabs",
         "children": [
           {
-            "id": "22be51887a7d7c12",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "异步操作/协程.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "协程"
-            }
-          },
-          {
-            "id": "e8ac37710fbda7aa",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "异步操作/回调.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "回调"
-            }
-          },
-          {
-            "id": "c947c5ef7756c8a4",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "异步操作/回调.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "回调"
-            }
-          },
-          {
-            "id": "b3658c13e7d3a791",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Unity功能/Unity Layer.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Unity Layer"
-            }
-          },
-          {
-            "id": "d642859cdb45941b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "代码/错误处理.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "错误处理"
-            }
-          },
-          {
             "id": "20690cdd1e91d6ed",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "代码/事件Events.md",
+                "file": "UnityPackage功能/Input System.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "事件Events"
+              "title": "Input System"
+            }
+          },
+          {
+            "id": "b0bc056221132070",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Unity旋转对象.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Unity旋转对象"
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -244,38 +178,38 @@
       "command-palette:打开命令面板": false
     }
   },
-  "active": "20690cdd1e91d6ed",
+  "active": "b0bc056221132070",
   "lastOpenFiles": [
+    "UnityPackage功能/Input System.md",
+    "Unity旋转对象.md",
+    "UnityPackage功能/Timeline.md",
     "ScriptableObject.md",
     "Unity中储存数据.md",
     "using用作资源管理.md",
+    "代码/Unity各方法执行顺序.md",
+    "代码/System.Linq.md",
+    "代码/特殊语法与语法糖.md",
+    "代码/关键字(修饰符).md",
+    "代码/传递.md",
+    "代码/如何共享内容/单例模式.md",
     "代码/错误处理.md",
+    "代码/方法类型.md",
+    "代码/属性和字段.md",
     "代码/Assert断言.md",
+    "代码/事件Events.md",
     "Unity功能/Unity Layer.md",
     "Unity功能/动画.md",
     "Resources/ConceptsOverview.svg",
     "代码/构造函数Constructor.md",
-    "代码/方法类型.md",
     "代码/方法重载.md",
-    "代码/关键字(修饰符).md",
     "代码/泛型.md",
-    "代码/传递.md",
-    "代码/如何共享内容/单例模式.md",
     "异步操作/Async.md",
     "异步操作/协程.md",
     "异步操作/回调.md",
     "异步操作/UniTask.md",
     "未命名",
-    "代码/属性和字段.md",
-    "代码/事件Events.md",
-    "代码/Unity各方法执行顺序.md",
-    "代码/System.Linq.md",
-    "代码/委托Delegate.md",
-    "代码/特殊语法与语法糖.md",
-    "UnityPackage功能/Input System.md",
     "异步操作",
     "代码/如何共享内容",
-    "conflict-files-obsidian-git.md",
     "代码",
     "Unity功能",
     "UnityPackage功能",
