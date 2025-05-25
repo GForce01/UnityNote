@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "移动与旋转/Unity旋转对象.md",
+                "file": "移动与旋转/Quaternion运算.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Unity旋转对象"
+              "title": "Quaternion运算"
             }
           }
         ],
@@ -194,8 +194,8 @@
   },
   "active": "970c7f03272c2c2f",
   "lastOpenFiles": [
-    "移动与旋转/Quaternion运算.md",
     "移动与旋转/Unity旋转对象.md",
+    "移动与旋转/Quaternion运算.md",
     "移动与旋转",
     "UnityPackage功能/Input System.md",
     "UnityPackage功能/Timeline.md",

@@ -5,5 +5,7 @@
 而想要去除特定旋转的方式则为：
 Quaternion1 \* Quaternion2.inverse
 
+***四元数乘法不满足交换律！！！***
+
 
 在Quaternion旋转中，两个点lerp结果会是一道直线，slerp则是弧线
