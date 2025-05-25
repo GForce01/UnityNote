@@ -26,3 +26,13 @@ transform.Rotate
 Z与Forward方向相同，X垂直于Forward与Upward组成的平面，最后Y垂直于ZX平面，因此Upward并不一定要与Forward垂直，XY方向根据右手螺旋定理判断
 
 比如Transform.LookAT(Transform target, Vector3 WorldUp)中最终y轴会用上述逻辑尽量接近WorldUp
+
+具体算法为：
+1. 确定forward方向（Z轴）：
+forward=(targetPosition - selfPosition).normalizedforward=(targetPosition - selfPosition).normalized
+
+2. 计算right方向（X轴）：
+right=Vector3.Cross(worldUp, forward).normalizedright=Vector3.Cross(worldUp, forward).normalized
+
+3. 重新计算up方向（Y轴）：
+up=Vector3.Cross(forward, right)up=Vector3.Cross(forward, right)
