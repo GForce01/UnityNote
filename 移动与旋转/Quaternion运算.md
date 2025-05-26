@@ -3,7 +3,7 @@
 例如Q1\*Q2就是指在Q1基础上旋转Q2
 
 而想要去除特定旋转的方式则为：
-Quaternion1 \* Quaternion2.inverse
+ Quaternion2.inverse\* Quaternion1
 
 ***四元数乘法不满足交换律！！！***
 
