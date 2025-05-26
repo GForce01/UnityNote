@@ -16,23 +16,18 @@ In other words, suppose R is the current rotation, and Ry is a small spin on Y, 
 In other, other words. `A*B` is B applied on local A, or global A applied to B, depending on how you want to think of it. Yes, it is very confusing until you settle on the “right” way to think of it for any particular problem.
 ```
 
-| 全局坐标系下旋转 Ry                                    | 局部坐标系下旋转 Ry |
-| ---------------------------------------------- | ----------- |
-| Ry * R                                         | R * Ry      |
-| 可以理解为先执行好原本旋转R，之后再进行Ry运算，此时Ry发生在世界坐标系下不受自身旋转影响 |             |
-
+| 全局坐标系下旋转 Ry                                    | 局部坐标系下旋转 Ry                               |
+| ---------------------------------------------- | ----------------------------------------- |
+| Ry * R                                         | R * Ry                                    |
+| 可以理解为先执行好原本旋转R，之后再进行Ry运算，此时Ry发生在世界坐标系下不受自身旋转影响 | 可以理解为先执行好Ry旋转，再加上原本的旋转R，因此Ry被对对其到了R的局部坐标系 |
 
 > - **物体当前旋转是 R**
->     
 > - **要应用一个新旋转 M**
->     
 > - 那么：
->     
 >     - `R * M` 表示在 **物体的局部坐标系下应用 M**
->         
 >     - `M * R` 表示在 **世界坐标系下应用 M**
->
+>     - 后执行的四元数为坐标系
 
-
+### 插值
 在Quaternion旋转中，两个点lerp结果会是一道直线，slerp则是弧线
 
