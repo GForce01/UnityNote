@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Unity功能/Unity Layer.md",
+                "file": "移动与旋转/Unity旋转对象.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Unity Layer"
+              "title": "Unity旋转对象"
             }
           }
         ],
@@ -194,15 +194,18 @@
   },
   "active": "970c7f03272c2c2f",
   "lastOpenFiles": [
-    "Unity功能/动画.md",
-    "移动与旋转/Quaternion运算.md",
-    "移动与旋转/Unity旋转对象.md",
-    "移动与旋转",
+    "Resources/ConceptsOverview.svg",
+    "Unity功能/Unity Layer.md",
+    "UnityPackage功能/Cinemachine.md",
     "UnityPackage功能/Input System.md",
     "UnityPackage功能/Timeline.md",
     "ScriptableObject.md",
     "Unity中储存数据.md",
     "using用作资源管理.md",
+    "Unity功能/动画.md",
+    "移动与旋转/Quaternion运算.md",
+    "移动与旋转/Unity旋转对象.md",
+    "移动与旋转",
     "代码/Unity各方法执行顺序.md",
     "代码/System.Linq.md",
     "代码/特殊语法与语法糖.md",
@@ -214,14 +217,10 @@
     "代码/属性和字段.md",
     "代码/Assert断言.md",
     "代码/事件Events.md",
-    "Unity功能/Unity Layer.md",
-    "Resources/ConceptsOverview.svg",
     "代码/构造函数Constructor.md",
     "代码/方法重载.md",
     "代码/泛型.md",
     "异步操作/Async.md",
-    "异步操作/协程.md",
-    "异步操作/回调.md",
     "异步操作",
     "代码/如何共享内容",
     "代码",
