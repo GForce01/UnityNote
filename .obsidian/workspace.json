@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "移动与旋转/Quaternion运算.md",
+                "file": "Unity功能/Unity Layer.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Quaternion运算"
+              "title": "Unity Layer"
             }
           }
         ],
@@ -194,8 +194,9 @@
   },
   "active": "970c7f03272c2c2f",
   "lastOpenFiles": [
-    "移动与旋转/Unity旋转对象.md",
+    "Unity功能/动画.md",
     "移动与旋转/Quaternion运算.md",
+    "移动与旋转/Unity旋转对象.md",
     "移动与旋转",
     "UnityPackage功能/Input System.md",
     "UnityPackage功能/Timeline.md",
@@ -214,7 +215,6 @@
     "代码/Assert断言.md",
     "代码/事件Events.md",
     "Unity功能/Unity Layer.md",
-    "Unity功能/动画.md",
     "Resources/ConceptsOverview.svg",
     "代码/构造函数Constructor.md",
     "代码/方法重载.md",
