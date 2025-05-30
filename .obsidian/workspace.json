@@ -41,12 +41,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "移动与旋转/Unity旋转对象.md",
+                "file": "移动与旋转/Quaternion运算.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Unity旋转对象"
+              "title": "Quaternion运算"
             }
           }
         ],
@@ -194,6 +194,7 @@
   },
   "active": "970c7f03272c2c2f",
   "lastOpenFiles": [
+    "移动与旋转/Unity旋转对象.md",
     "Resources/ConceptsOverview.svg",
     "Unity功能/Unity Layer.md",
     "UnityPackage功能/Cinemachine.md",
@@ -204,7 +205,6 @@
     "using用作资源管理.md",
     "Unity功能/动画.md",
     "移动与旋转/Quaternion运算.md",
-    "移动与旋转/Unity旋转对象.md",
     "移动与旋转",
     "代码/Unity各方法执行顺序.md",
     "代码/System.Linq.md",
